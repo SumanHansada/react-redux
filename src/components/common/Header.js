@@ -10,6 +10,10 @@ const Header = () => {
         Home
       </NavLink>
       {' | '}
+      <NavLink to="/courses" activeStyle={actveStyle}>
+        Courses
+      </NavLink>
+      {' | '}
       <NavLink to="/about" activeStyle={actveStyle}>
         About
       </NavLink>
