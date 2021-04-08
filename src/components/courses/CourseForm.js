@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TextInput from '../common/TextInput';
 import SelectInput from '../common/SelectInput';
-import { connect } from 'react-redux';
 
 const CourseForm = ({
   course,
@@ -66,8 +65,4 @@ CourseForm.propTypes = {
   saving: PropTypes.bool,
 };
 
-function mapStateToProps() {}
-
-function mapDispatchToProps() {}
-
-export default connect(mapStateToProps, mapDispatchToProps)(CourseForm);
+export default CourseForm;
