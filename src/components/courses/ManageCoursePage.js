@@ -8,7 +8,7 @@ import { newCourse } from '../../../tools/mockData';
 import Spinner from '../common/Spinner';
 import { toast } from 'react-toastify';
 
-function ManageCoursePage({
+export function ManageCoursePage({
   courses,
   authors,
   loadCourses,
@@ -48,9 +48,9 @@ function ManageCoursePage({
     const { title, authorId, category } = course;
     const errors = {};
 
-    if (!title) errors.title = 'Title is required';
-    if (!authorId) errors.author = 'Author is required';
-    if (!category) errors.category = 'Category is required';
+    if (!title) errors.title = 'Title is required.';
+    if (!authorId) errors.author = 'Author is required.';
+    if (!category) errors.category = 'Category is required.';
 
     setErrors(errors);
 
